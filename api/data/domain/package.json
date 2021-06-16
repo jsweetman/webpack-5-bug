@@ -1,0 +1,8 @@
+{
+	"name": "data-domain",
+	"description": "Related code between api and ui",
+	"version": "2.20.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"private": true
+}
