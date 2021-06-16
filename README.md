@@ -11,3 +11,10 @@ Steps to reproduce:
 ```
 Uncaught TypeError: Cannot read property 'BClass' of undefined
 ```
+
+If you make any of the following changes (just one is fine), the bug does not occur:
+* In `api/data/domain/src/aClass.ts` comment out `@Annotate(undefined)`
+* In `api/data/domain/index.ts` move `export { BClass } from './src/bClass';` above `export { AClass } from './src/aClass';`
+* In `ui/src/app/index.tsx` change `import { AClass } from "data-domain";` to `import { AClass } from "data-domain/src/aClass";`
+
+This bug did not occur in webpack 4.
