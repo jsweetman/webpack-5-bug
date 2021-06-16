@@ -1,0 +1,14 @@
+.idea
+.DS_STORE
+node_modules
+.module-cache
+*.log*
+dist
+coverage
+.serverless
+.vscode
+webpack-stats.json
+__pycache__
+build/deployed/
+utils/python/update-param-store.json
+*poetry.lock
